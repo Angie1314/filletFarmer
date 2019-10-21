@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhrasesKeyboardComponent implements OnInit  {
   phraseskey: any;
-
+   logo;
   constructor() { }
 
   ngOnInit() {
+    this.logo = '../../../../assets/images/cuts.jpg';
   }
 
   onInputChange = (event: any) => {

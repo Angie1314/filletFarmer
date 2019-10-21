@@ -16,6 +16,8 @@ import { IconsPageComponent } from './icons-page/icons-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { KeyboardPageComponent } from './keyboard-page/keyboard-page.component';
 import { PhrasesKeyboardComponent } from './phrases-keyboard/phrases-keyboard.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PhrasesKeyboardComponent } from './phrases-keyboard/phrases-keyboard.co
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+
   ],
   providers: [],
   bootstrap: [AppComponent]
