@@ -18,7 +18,7 @@ export class NavBarComponent implements OnInit {
   routerEventsSubscription: Subscription;
 
   constructor(private router: Router) {
-  this.logo = '../../../../assets/images/logo.png';
+  this.logo = '../../../../assets/images/cow1.png';
   this.routerEventsSubscription = router.events.subscribe((event: RouterEvent) => {
       if (event instanceof NavigationEnd) {
         this.isAtHomePage = router.url === '/keyboardpage';

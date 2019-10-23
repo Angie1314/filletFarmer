@@ -1,6 +1,6 @@
 <nav class="shadow p-3 mb-5 bg-white navbar navbar-expand-lg navbar-light bg-info fixed-top">
     <img class='mb-2 mr-2' [src]="logo" alt="logo logo" />
-    <a class="navbar-brand logoFont">Fillet Farmer</a>
+    <a class="navbar-brand logoFont text-secondary">Rolust Brahman Cattle</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
                 <a class="nav-link" routerLink="/iconspage">About us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/phrasespage">Products</a>
+                <a class="nav-link" routerLink="/phrasespage">Cattle</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/keyboardpage">Contact Us</a>
@@ -34,7 +34,8 @@
 
         <div>
             <a routerLink="/" class="nav-link-style" [class.active-nav-link-bottom]="isAtProfilePage">
-                <i class="far fa-user-circle iconColor fa-lg"></i>
+                <!-- <i class="far fa-user-circle iconColor fa-lg"></i> -->
+                <img [src]="logo" />
             </a>
         </div>
 

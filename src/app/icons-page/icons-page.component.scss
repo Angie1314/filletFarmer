@@ -4,13 +4,17 @@ $parallax-background-size: cover;
 $centered-content-align: center;
 $farmer-blue: #007fba;
 
+body{
+    background-color: $farmer-blue;
+}
+
 .mt {
     margin-top: 10%;
 }
 
 .parallax1 {
     /* The image used */
-    background-image: url("src/assets/images/steak.jpg");
+    background-image: url("src/assets/images/grass.jpg");
     min-height: 500px;
     background-attachment: $parallax-background;
     background-position: $centered-content-align;
@@ -20,12 +24,15 @@ $farmer-blue: #007fba;
 
 .parallax2 {
     /* The image used */
-    background-image: url("src/assets/images/wheat.jpg");
-    min-height: 500px;
+    background-image: url("src/assets/images/cattle.jpg");
+    height: 500px;
+    background-size: 100% auto;
+    // background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
     background-attachment: $parallax-background;
     background-position: $centered-content-align;
     background-repeat: $parallax-background-repeat;
-    background-size: $parallax-background-size;
 }
 
 input {

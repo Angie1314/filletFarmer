@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { MainLandingPageComponent } from './main-landing-page/main-landing-page.component';
 import { PhrasesiconsComponent } from './phrasesicons/phrasesicons.component';
-import { PharsesPageComponent } from './pharses-page/pharses-page.component';
+import { PharsesPageComponent } from './contact-form/pharses-page.component';
 import { IconsPageComponent } from './icons-page/icons-page.component';
 import { KeyboardPageComponent } from './keyboard-page/keyboard-page.component';
 
