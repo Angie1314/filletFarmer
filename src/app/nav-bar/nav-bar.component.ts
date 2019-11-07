@@ -21,7 +21,7 @@ export class NavBarComponent implements OnInit {
   this.logo = '../../../../assets/images/cow1.png';
   this.routerEventsSubscription = router.events.subscribe((event: RouterEvent) => {
       if (event instanceof NavigationEnd) {
-        this.isAtHomePage = router.url === '/keyboardpage';
+        this.isAtHomePage = router.url === '/';
         this.isAtProfilePage = router.url === '/';
         // TODO possibly also set website tile here
       }

@@ -9,34 +9,36 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { LoginComponent } from './login/login.component';
 import { MainLandingPageComponent } from './main-landing-page/main-landing-page.component';
-import { KeyboardComponent } from './keyboard/keyboard.component';
-import { PhrasesiconsComponent } from './phrasesicons/phrasesicons.component';
-import { PharsesPageComponent } from './contact-form/pharses-page.component';
 import { IconsPageComponent } from './icons-page/icons-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { KeyboardPageComponent } from './keyboard-page/keyboard-page.component';
 import { PhrasesKeyboardComponent } from './phrases-keyboard/phrases-keyboard.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { CowProfilesComponent } from './cow-profiles/cow-profiles.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+
+import { FormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MainLandingPageComponent,
-    KeyboardComponent,
-    PhrasesiconsComponent,
-    PharsesPageComponent,
     IconsPageComponent,
     NavBarComponent,
-    KeyboardPageComponent,
-    PhrasesKeyboardComponent
+    PhrasesKeyboardComponent,
+    CowProfilesComponent,
+    AboutUsComponent,
+    ContactFormComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AngularFontAwesomeModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
 
   ],

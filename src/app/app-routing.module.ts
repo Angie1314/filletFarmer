@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { MainLandingPageComponent } from './main-landing-page/main-landing-page.component';
-import { PhrasesiconsComponent } from './phrasesicons/phrasesicons.component';
-import { PharsesPageComponent } from './contact-form/pharses-page.component';
 import { IconsPageComponent } from './icons-page/icons-page.component';
-import { KeyboardPageComponent } from './keyboard-page/keyboard-page.component';
+import { CowProfilesComponent } from './cow-profiles/cow-profiles.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 const routes: Routes = [{
   path: 'login',
@@ -14,17 +14,20 @@ const routes: Routes = [{
   path: '',
   component: MainLandingPageComponent
 }, {
-  path: 'phrasesicons',
-  component: PhrasesiconsComponent
-}, {
-  path: 'phrasespage',
-  component: PharsesPageComponent
-}, {
   path: 'iconspage',
   component: IconsPageComponent
-}, {
-  path: 'keyboardpage',
-  component: KeyboardPageComponent
+}
+, {
+  path: 'cowprofiles',
+  component: CowProfilesComponent
+}
+, {
+  path: 'aboutus',
+  component: AboutUsComponent
+}
+, {
+  path: 'contactus',
+  component: ContactFormComponent
 }
 ];
 
