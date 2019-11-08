@@ -1,36 +1,85 @@
 <nav>
-    <app-nav-bar></app-nav-bar>
+  <app-nav-bar></app-nav-bar>
 </nav>
 
-<div class="margin">
-    <ngb-carousel *ngIf="images">
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[0]" alt="Random first slide">
-          </div>
-          <div class="carousel-caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[1]" alt="Random second slide">
-          </div>
-          <div class="carousel-caption">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </ng-template>
-        <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-            <img [src]="images[2]" alt="Random third slide">
-          </div>
-          <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </div>
-        </ng-template>
-      </ngb-carousel>
-    
-</div>
+<main class="mx-auto">
+  <div *ngFor="let item of images">
+    <div>
+      <img class="item-img w-100 h-100 p-1" [src]="item.src" alt="Picture">
+    </div>
+
+    <div class="d-flex mb-1">
+      <div class="font-italic iconColor mr-1">Uploaded by</div>
+    </div>
+
+    <div class="d-flex align-items-center my-2" *ngIf="item">
+      <!-- <img  [src]="faUserCircle" class="mr-3 ml-2 my-auto"> -->
+      <!-- <img *ngIf="item.photoURL" [src]="item.photoURL" alt="profile picture"
+        class="rounded-circle image-size mr-3 ml-2 my-auto"> -->
+      <i class="fas fa-user-circle rounded-circle fa-lg mr-1 iconColor"></i>
+      <div class="font-weight-bold">{{item.name}}</div>
+    </div>
+
+    <div class="d-flex mb-5">
+
+      <p class="text-justify">
+        <span class="text-secondary">{{item.date}}</span>
+        {{item.description}}
+      </p>
+    </div>
+  </div>
+
+
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+    <table class="table table-bordered table-striped mb-0 text-secondary">
+      <thead style="background-color:#68829E; color: snow">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Tag</th>
+          <th scope="col">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Bull</td>
+          <td>10110</td>
+          <td>3yrs</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cow</td>
+          <td>10399</td>
+          <td>2yrs</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Bull</td>
+          <td>19292</td>
+          <td>1yr</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Cow</td>
+          <td>10333</td>
+          <td>8months</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Bull</td>
+          <td>11123</td>
+          <td>2yrs</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Cow</td>
+          <td>12877</td>
+          <td>1yr</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</main>

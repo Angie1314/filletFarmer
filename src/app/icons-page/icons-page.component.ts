@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./icons-page.component.scss']
 })
 export class IconsPageComponent implements OnInit {
+  images = [
+    'assets/images/brah.jpg',
+    'assets/images/brah2.jpg',
+    'assets/images/cattle.jpg'
+  ];
 
   owlImg: string;
   penguinImg: string;

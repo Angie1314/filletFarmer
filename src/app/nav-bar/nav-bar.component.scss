@@ -7,7 +7,11 @@ $primary-text-color: rgba(0, 0, 0, 0.747);
 }
 
 .iconColor {
-    color: grey;
+    color:#d3d3d3;
+}
+
+shadow {
+background-color:#505160;
 }
 
 .bottom-bar {
@@ -20,7 +24,8 @@ $primary-text-color: rgba(0, 0, 0, 0.747);
     color: $primary-text-color;
     text-decoration: none;
 }
-
+.grayscale { filter: grayscale(50%); }
+.huerotate { filter: hue-rotate(180deg); }
 .nav-link-bottom {
     color: $primary-text-color;
 }
